@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		468E8EF41F76EF0D00802C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8EF31F76EF0D00802C63 /* AppDelegate.swift */; };
-		468E8EF61F76EF0D00802C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8EF51F76EF0D00802C63 /* ViewController.swift */; };
+		468E8EF61F76EF0D00802C63 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8EF51F76EF0D00802C63 /* MainVC.swift */; };
 		468E8EF91F76EF0D00802C63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468E8EF71F76EF0D00802C63 /* Main.storyboard */; };
 		468E8EFB1F76EF0D00802C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 468E8EFA1F76EF0D00802C63 /* Assets.xcassets */; };
 		468E8EFE1F76EF0D00802C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 468E8EFC1F76EF0D00802C63 /* LaunchScreen.storyboard */; };
 		468E8F091F76EF0D00802C63 /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8F081F76EF0D00802C63 /* window_shopperTests.swift */; };
 		468E8F141F76EF0E00802C63 /* window_shopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8F131F76EF0E00802C63 /* window_shopperUITests.swift */; };
+		468E8F241F76F77B00802C63 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468E8F231F76F77B00802C63 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		468E8EF01F76EF0D00802C63 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468E8EF31F76EF0D00802C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		468E8EF51F76EF0D00802C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		468E8EF51F76EF0D00802C63 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		468E8EF81F76EF0D00802C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468E8EFA1F76EF0D00802C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468E8EFD1F76EF0D00802C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		468E8F0F1F76EF0E00802C63 /* window-shopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		468E8F131F76EF0E00802C63 /* window_shopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperUITests.swift; sourceTree = "<group>"; };
 		468E8F151F76EF0E00802C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		468E8F231F76F77B00802C63 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		468E8EF21F76EF0D00802C63 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				468E8F221F76F75000802C63 /* Views */,
+				468E8F211F76EFBE00802C63 /* Controller */,
 				468E8EF31F76EF0D00802C63 /* AppDelegate.swift */,
-				468E8EF51F76EF0D00802C63 /* ViewController.swift */,
 				468E8EF71F76EF0D00802C63 /* Main.storyboard */,
 				468E8EFA1F76EF0D00802C63 /* Assets.xcassets */,
 				468E8EFC1F76EF0D00802C63 /* LaunchScreen.storyboard */,
@@ -123,6 +126,22 @@
 				468E8F151F76EF0E00802C63 /* Info.plist */,
 			);
 			path = "window-shopperUITests";
+			sourceTree = "<group>";
+		};
+		468E8F211F76EFBE00802C63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				468E8EF51F76EF0D00802C63 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		468E8F221F76F75000802C63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				468E8F231F76F77B00802C63 /* Currency.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				468E8EF61F76EF0D00802C63 /* ViewController.swift in Sources */,
+				468E8F241F76F77B00802C63 /* Currency.swift in Sources */,
+				468E8EF61F76EF0D00802C63 /* MainVC.swift in Sources */,
 				468E8EF41F76EF0D00802C63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
